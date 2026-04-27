@@ -8,4 +8,5 @@ class solution:
     
 obj = solution()
 print(obj.factorial(5)) # here we are calling the factorial function with the value of 5 to get the factorial.
+# simple codein python using the class .
         
