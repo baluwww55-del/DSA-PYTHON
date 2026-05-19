@@ -1,0 +1,44 @@
+# Recursion : introduction to recursion 
+# 1. what is recursion ?
+# ans: recursion is an function which calls itself .
+# eg : simple code:
+def fun(n):
+    if n == 0:
+        return 
+    print("Hello")
+    fun(n-1)
+
+fun(3) 
+
+# so it is the basic example of recursion by the function calling itself :
+# we have two types of recursion :
+# 1. direct recursion .
+# 2. indirect recursion .
+# 1. when a function calls itself directly it is known as direct recursion .
+# 2 . when a function calls itself indirectly it is known as indirect recursion .
+
+# direct recursion 
+def fun(n):
+    if n == 0:
+        return 
+    print("Balu")
+    fun(n-2)
+fun(4)
+# function called directly it is known as recursion 
+
+# indirect recursion 
+def is_even(n):
+    if n == 0:
+        return True
+    return is_odd(n - 1)  # Calls is_odd
+
+def is_odd(n):
+    if n == 0:
+        return False
+    return is_even(n - 1) # Calls is_even back
+
+# Usage
+print(is_even(4))  # Output: True
+print(is_odd(4))   # Output: False
+
+# so this is the example of recursion using code in python :
